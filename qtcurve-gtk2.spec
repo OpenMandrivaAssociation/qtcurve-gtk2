@@ -1,13 +1,13 @@
 Name: qtcurve-gtk2
 Summary: QtCurve Theme for GTK
-Version: 0.59.6
+Version: 0.59.7
 Release: %mkrel 1
 Source0: http://home.freeuk.com/cpdrummond/QtCurve-Gtk2-%version.tar.bz2
 Patch0: QtCurve-Gtk2-0.59.5-fix-underlink.patch
 URL: http://www.kde-look.org/content/show.php?content=40492
 Group: Graphical desktop/GNOME
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-License: GPLv2+
+License: GPLv2
 BuildRequires: gtk+2-devel
 BuildRequires: cmake
 
