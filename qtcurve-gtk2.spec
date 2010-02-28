@@ -2,7 +2,7 @@
 
 Name: qtcurve-gtk2
 Summary: QtCurve Theme for GTK
-Version: 1.0.2
+Version: 1.1.1
 Release: %mkrel 1
 Source0: http://craigd.wikispaces.com/file/view/QtCurve-Gtk2-%{version}.tar.bz2
 Patch0: QtCurve-Gtk2-1.0.2-fix-underlink.patch
