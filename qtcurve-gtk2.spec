@@ -1,34 +1,33 @@
 %define libname %{_lib}%{name}
 
-Name: qtcurve-gtk2
-Summary: QtCurve Theme for GTK
-Version: 1.8.8
-Release: %mkrel 1
-Source0: http://craigd.wikispaces.com/file/view/QtCurve-Gtk2-%{version}.tar.bz2
-URL: http://www.kde-look.org/content/show.php?content=40492
-Group: Graphical desktop/GNOME
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-License: GPLv2
-BuildRequires: gtk+2-devel
-BuildRequires: cmake
-Requires: %{libname} = %{version}
+Name:		qtcurve-gtk2
+Summary:	QtCurve Theme for GTK
+Version:	1.8.15
+Release:	%mkrel 1
+Source0:	http://craigd.wikispaces.com/file/view/QtCurve-Gtk2-%{version}.tar.bz2
+URL:		http://www.kde-look.org/content/show.php?content=40492
+Group:		Graphical desktop/GNOME
+License:	GPLv2
+BuildRequires:	gtk+2-devel
+BuildRequires:	cmake
+Requires:	%{libname} = %{version}
 
 %description
 QtCurve theme for GTK2.
 
 %package -n %{libname}
-Summary: libraries for %{name}
-Group: System/Libraries 
-Provides: lib%{name} = %{version}-%{release} 
-Conflicts: %{name} < 0.69.2-2
+Summary:	libraries for %{name}
+Group:		System/Libraries
+Provides:	lib%{name} = %{version}-%{release}
+Conflicts:	%{name} < 0.69.2-2
 
 %description -n %{libname}
 Libraries for %{name}.
 
-%prep 
+%prep
 %setup -q -n QtCurve-Gtk2-%{version}
 
-%build 
+%build
 %cmake
 %make
 
@@ -36,7 +35,7 @@ Libraries for %{name}.
 rm -rf %{buildroot}
 %makeinstall_std -C build
 
-%clean 
+%clean
 rm -rf %{buildroot}
 
 %files
