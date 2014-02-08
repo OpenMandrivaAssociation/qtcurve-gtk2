@@ -3,7 +3,7 @@
 Name:		qtcurve-gtk2
 Summary:	QtCurve Theme for GTK
 Version:	1.8.15
-Release:	2
+Release:	3
 Group:		Graphical desktop/GNOME
 License:	GPLv2
 URL:		http://www.kde-look.org/content/show.php?content=40492
