@@ -6,7 +6,7 @@ Version:	1.8.16
 Release:	1
 Group:		Graphical desktop/GNOME
 License:	GPLv2
-URL:		http://www.kde-look.org/content/show.php?content=40492
+URL:		https://www.kde-look.org/content/show.php?content=40492
 Source0:	http://craigd.wikispaces.com/file/view/QtCurve-Gtk2-%{version}.tar.bz2
 BuildRequires:	pkgconfig(gtk+-2.0)
 BuildRequires:	cmake
